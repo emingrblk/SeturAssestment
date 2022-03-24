@@ -83,3 +83,4 @@ C:\Users\eming\Desktop\SeturAssestment\WebApi\bin\Debug\net5.0\Microsoft.AspNetC
 C:\Users\eming\Desktop\SeturAssestment\WebApi\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\eming\Desktop\SeturAssestment\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\eming\Desktop\SeturAssestment\WebApi\bin\Debug\net5.0\RabbitMQ.Client.dll
+C:\Users\eming\Desktop\SeturAssestment\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
