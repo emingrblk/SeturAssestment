@@ -3,7 +3,7 @@ using Core.Entities.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using SeturAssessment.ContactService.Utilities.Constants;
-using SeturAssessment.Core.Utilities.Results;
+using Core.Utilities.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;

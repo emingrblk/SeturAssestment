@@ -6,7 +6,7 @@ using Entities.Concrete.ContactInformationEntities;
 using SeturAssessment.ContactService.Business.Abstract;
 using SeturAssessment.ContactService.DataAccess.Abstract;
 using SeturAssessment.ContactService.Utilities.Constants;
-using SeturAssessment.Core.Utilities.Results;
+using Core.Utilities.Results;
 
 namespace SeturAssessment.ContactService.Business.Concrete
 {

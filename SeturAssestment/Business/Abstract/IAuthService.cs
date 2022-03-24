@@ -1,7 +1,7 @@
 ﻿using Core.Entities.Concrete; 
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
-using SeturAssessment.Core.Utilities.Results;
+using Core.Utilities.Results;
 using System;
 using System.Text;
 

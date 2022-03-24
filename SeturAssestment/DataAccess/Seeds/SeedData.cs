@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SeturAssessment.DataAccess.Concrete.EntityFrameworkCore.Seeds
+namespace DataAccess.Concrete.EntityFrameworkCore.Seeds
 {
     public static class SeedData
     {

@@ -21,7 +21,11 @@ namespace SeturAssessment.ContactService.Utilities.Constants
         public const string ReportRequestCreated = "Rapor Talebi Oluşturuldu.";
         public const string ReportRequestCreatedForLocation =  "İçin Rapor Talebi Oluşturuldu.";
 
-
+        public const string ReportsGet = "Raporlar Başarıyla Alındı.";
+        public const string ReportGet = "Rapor Başarıyla Alındı.";
+        public const string ReportAdded = "Rapor Başarıyla Eklendi.";
+        public const string ReportUpdated = "Rapor Başarıyla Güncellendi.";
+        public const string ReportBodyCreated = "Rapor İçeriği Oluştu.";
 
 
     }

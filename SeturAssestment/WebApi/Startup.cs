@@ -13,8 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using SeturAssessment.DataAccess.Concrete.EntityFrameworkCore.Seeds;
-using System;
+using DataAccess.Concrete.EntityFrameworkCore.Seeds;
+using Business.Utilities.MessageBrokers.RabbitMq;
 
 namespace WebApi
 {
@@ -31,7 +31,10 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<SeturAssesmentDbContext>(options =>
 
+          options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging(), ServiceLifetime.Scoped
+        );
             services.AddSwaggerGen(swagger =>
             {
                 //This is to generate the Default UI of Swagger Documentation  
@@ -67,13 +70,11 @@ namespace WebApi
                     }
                 });
             });
+            services.AddDependencyResolvers(new ICoreModule[] {
+               new CoreModule()
+            });
 
 
-            services.AddDbContext<SeturAssesmentDbContext>(options =>
-
-                    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Scoped
-
-            );
             services.AddSingleton<ITokenHelper, JwtHelper>();
 
             // For JWT
@@ -100,9 +101,9 @@ namespace WebApi
                 };
             });
 
-            services.AddDependencyResolvers(new ICoreModule[] {
-               new CoreModule()
-            });
+
+
+            services.AddHostedService<MqConsumerHelper>();
         }
 
 

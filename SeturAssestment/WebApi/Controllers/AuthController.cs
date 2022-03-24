@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc; 
 
 namespace SeturAssesment.Api.Controllers
@@ -35,6 +36,7 @@ namespace SeturAssesment.Api.Controllers
             return BadRequest(result.Message);
         }
 
+        [Authorize]
         [HttpPost("register")]
         public ActionResult Register(UserForRegisterDto userForRegisterDto)
         {

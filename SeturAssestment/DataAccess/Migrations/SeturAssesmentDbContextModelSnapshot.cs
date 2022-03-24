@@ -19,6 +19,61 @@ namespace DataAccess.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+            modelBuilder.Entity("Core.Entities.Concrete.ContactEntities.Report", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("ContactCount")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("text");
+
+                    b.Property<int>("PhoneNumberCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ReportStatusId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("RequestDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportStatusId");
+
+                    b.ToTable("Reports");
+                });
+
+            modelBuilder.Entity("Core.Entities.Concrete.ContactEntities.ReportStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("StatusName")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ReportStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            StatusName = "Hazırlanıyor"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            StatusName = "Tamamlandı"
+                        });
+                });
+
             modelBuilder.Entity("Core.Entities.Concrete.OperationClaim", b =>
                 {
                     b.Property<Guid>("Id")
@@ -125,6 +180,17 @@ namespace DataAccess.Migrations
                     b.HasIndex("ContactId");
 
                     b.ToTable("ContactInformations");
+                });
+
+            modelBuilder.Entity("Core.Entities.Concrete.ContactEntities.Report", b =>
+                {
+                    b.HasOne("Core.Entities.Concrete.ContactEntities.ReportStatus", "ReportStatus")
+                        .WithMany()
+                        .HasForeignKey("ReportStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ReportStatus");
                 });
 
             modelBuilder.Entity("Entities.Concrete.ContactInformationEntities.ContactInformation", b =>
