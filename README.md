@@ -19,7 +19,7 @@ Asd123
 
 İsteklerin olduğu bir pdf dosyası: 
 SeturAssestment\WebApi\api-doküman.pdf yolunda bulunmaktadır.
-
+https://github.com/emingrblk/SeturAssestment/blob/main/SeturAssestment/WebApi/api-dok%C3%BCman.pdf
 Web Api İstekleri Ve anlamları;
 
 /api/Contacts : Tüm Kişileri Çeker
