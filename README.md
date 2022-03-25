@@ -4,11 +4,9 @@ Notlar
 Appsetting.Json içinde, Db Bağlantı içi ConnectionString (PostgreSql) ve RabbitMQ için MessageBrokerOptions değerlerinin değiştirlmesi gerekmektedir.
 Otomatik Migration Uygulanıyor.
 SeedData Eklendi. 
-Zaman Azlığından UnitTest , FluentValidation ,Mapper, MiddlewareLog kullanılmamıştır.
+Zaman Azlığından UnitTest , FluentValidation ,AutoMapper, MiddlewareLog kullanılmamıştır.
 Teknolojiler
 .NetCore WebApi
-Autofac IoC
-AutoMapper
 RabbitMQ
 Swagger
 PostgreSql
