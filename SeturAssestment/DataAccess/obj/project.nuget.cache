@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yQgopMy9rCkYFqXWyHbGTZn3EqllZjurr7SFgjM+nYv7aWKD+uVJms8E4T65OFArYUlZV9SlV+RccwdIOX0cfQ==",
+  "dgSpecHash": "PS6HagKZHwlXSGcoHYE2RdYKGLXKn9X9JOYB1OaKSduC0xQKtAwZ1F/jb+IOHAPQ9K+1pqMLwCQrwHItDg6cOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\eming\\Desktop\\SeturAssestment\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\eming\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
-    "C:\\Users\\eming\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.10\\microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512",
@@ -25,10 +24,8 @@
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.10\\microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
-    "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.10\\microsoft.entityframeworkcore.design.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.10\\microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.10\\microsoft.entityframeworkcore.sqlserver.5.0.10.nupkg.sha512",
-    "C:\\Users\\eming\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\eming\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

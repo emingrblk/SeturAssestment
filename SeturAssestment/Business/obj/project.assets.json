@@ -1891,7 +1891,6 @@
           "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.2"
         },

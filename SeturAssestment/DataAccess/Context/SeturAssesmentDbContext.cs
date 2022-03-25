@@ -12,11 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
 
     public class SeturAssesmentDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseNpgsql(@"User ID=postgres;Password=59wTY2bh4y;Server=localhost;Port=5432;Database=SeturAssessmentDb;Integrated Security=true;Pooling=true;");
-        }
-
+      
         public SeturAssesmentDbContext(DbContextOptions<SeturAssesmentDbContext> options) : base(options)
         {
         }

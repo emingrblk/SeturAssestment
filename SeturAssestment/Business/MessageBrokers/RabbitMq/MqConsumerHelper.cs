@@ -77,7 +77,7 @@ namespace Business.Utilities.MessageBrokers.RabbitMq
         {
 
             ReportRequestModelWithLocation model = JsonConvert.DeserializeObject<ReportRequestModelWithLocation>(message);
-            var result = JsonConvert.DeserializeObject<ResponseModel>(message);
+         
             Report reportPending = new Report() { RequestDate = DateTime.Now, ReportStatusId = 1 };
 
             //CreateReport Reading

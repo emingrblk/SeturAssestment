@@ -31,10 +31,17 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<SeturAssesmentDbContext>(options =>
+        
 
-          options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging(), ServiceLifetime.Scoped
-        );
+            services.AddControllers().AddNewtonsoftJson(options =>
+                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+             );
+
+
+
+
+            services.AddDbContext<SeturAssesmentDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddSwaggerGen(swagger =>
             {
                 //This is to generate the Default UI of Swagger Documentation  
