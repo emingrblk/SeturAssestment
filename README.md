@@ -17,6 +17,9 @@ Test Api User;
 admin@admin.com
 Asd123
 
+İsteklerin olduğu bir pdf dosyası: 
+SeturAssestment\WebApi\api-doküman.pdf yolunda bulunmaktadır.
+
 Web Api İstekleri Ve anlamları;
 
 /api/Contacts : Tüm Kişileri Çeker
